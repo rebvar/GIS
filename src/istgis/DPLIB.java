@@ -248,7 +248,7 @@ public class DPLIB {
 
     public static ArrayList<IChrm> POP_SORT(ArrayList<IChrm> hmm) {
         for (int i = 0; i < hmm.size() - 1; i++) {
-            for (int j = i + 1; j < hmm.size() - 1; j++) {
+            for (int j = i + 1; j < hmm.size(); j++) {
                 if (hmm.get(i).getFitness() < hmm.get(j).getFitness()) {
                     IChrm tmp = hmm.get(i);
                     hmm.set(i, hmm.get(j));
