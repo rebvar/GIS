@@ -94,7 +94,7 @@ public class GA {
             }
         }
         
-        return maxInd;
+        return vals[maxInd];
     }
 
     public static Instances[] crossOver(Instances ds1, Instances ds2) {
